@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title> To-Do List</title>
+</head>
+<body>
+
+  <div id="app">
+    <h1 style="color: blue;">To-Do List</h1>
+    <div class="add-task">
+      <input type="text" id="taskInput" placeholder="Add a new task">
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    <div class="filter-options">
+      <label>Show:
+        <select id="filterOptions">
+          <option value="all">All</option>
+          <option value="active">Active</option>
+          <option value="completed">Completed</option>
+        </select>
+      </label>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
